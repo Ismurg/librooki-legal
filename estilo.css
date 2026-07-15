@@ -34,6 +34,12 @@ header.site .brand {
   font-size: 26px; font-weight: 800; color: var(--acc);
   letter-spacing: -0.02em; text-decoration: none;
 }
+.logo-img { height: 42px; width: auto; display: inline-block; }
+.logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  .logo-light { display: none; }
+  .logo-dark { display: inline-block; }
+}
 header.site .sub { color: var(--soft); font-size: 14px; margin-top: 4px; }
 h1 { font-size: 26px; margin: 28px 0 6px; letter-spacing: -0.01em; }
 .updated { color: var(--soft); font-size: 13.5px; margin-bottom: 24px; }
